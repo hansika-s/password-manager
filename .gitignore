@@ -209,4 +209,5 @@ __marimo__/
 # Sensitive files
 secret.key
 vault.json
+vault.salt
 master.hash

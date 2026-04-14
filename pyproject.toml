@@ -1,0 +1,19 @@
+[project]
+name = "passwordmanager"
+version = "0.1.0"
+description = "A CLI password manager with master-password-derived encryption"
+requires-python = ">=3.13"
+dependencies = [
+    "cryptography>=45",
+    "typer>=0.16",
+]
+
+[project.scripts]
+pm = "passwordmanager.cli:app"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
